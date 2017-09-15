@@ -1,4 +1,9 @@
-´´´function_name: Addition
+# SPECIFICATIONS
+This document contains the function specification for clean calc
+
+
+```javascript
+function_name: Addition
   args: 2
     arg1: numbers
     arg2: numbers
@@ -52,4 +57,5 @@ function_name: Operate
   return: A number which is stored in the variable lastResult
     purpose: the returned value is used to change variable 'lastResult'
   behavior: checks for arg2, if there is no arg2, it calls the operation with the variable lastresul
-purpose: it is enables chaining of the mathematical operation´´´
+purpose: it is enables chaining of the mathematical operation
+```
