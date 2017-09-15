@@ -1,4 +1,3 @@
 # CLEANCALC*
 
-The first series of the javascript calculator apps, showing the pure functions that will power the whole application throughout the developmental stages.
-
+The second iteration now includes the Calc object, which would be the foundation for our code
