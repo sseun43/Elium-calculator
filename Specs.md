@@ -1,9 +1,12 @@
 # SPECIFICATIONS
-This document contains the function specification for clean calc
+This document contains the specification for the object calc
 
 
 ```javascript
-function_name: Addition
+
+property:lastResult
+
+method_name: Addition
   args: 2
     arg1: numbers
     arg2: numbers
@@ -12,7 +15,7 @@ function_name: Addition
   behavior: adds the arguement given
 purpose: it does all the addition operation for the calculation application
 
-function_name: Subtraction
+method_name: Subtraction
   args: 2
     arg1: numbers
     arg2: numbers
@@ -21,7 +24,7 @@ function_name: Subtraction
   behavior: Subtract arg1 from arg2
 purpose: it does all the subtraction operation for the calculation application
 
-function_name: Multiplication
+method_name: Multiplication
   args: 2
     arg1: numbers
     arg2: numbers
@@ -30,7 +33,7 @@ function_name: Multiplication
   behavior: Multiply the arguement given
 purpose: it does all the multiplication operation for the calculation application
 
-function_name: Division
+method_name: Division
   args: 2
     arg1: numbers
     arg2: numbers
@@ -39,23 +42,14 @@ function_name: Division
   behavior: divides the arguement given
 purpose: it does all the division operation for the calculation application
 
-function_name: OperateIntermediary
-  args: 3
-    operation:call back function e.g Multiply operation
-    arg1: numbers
-    arg2: numbers
-  return: the result of the given operation
-    purpose: the returned value is used to change variable 'lastResult'
-  behavior: Calls the operation 
-purpose: it is used to execute/run the mathematical operation
 
-function_name: Operate
+method_name: Operate
   args: 3
     operation:call back function e.g Multiply operation
     arg1: numbers
     arg2: numbers
   return: A number which is stored in the variable lastResult
     purpose: the returned value is used to change variable 'lastResult'
-  behavior: checks for arg2, if there is no arg2, it calls the operation with the variable lastresul
+  behavior: checks for arg2, if there is no arg2, it calls the operation with the variable lastresult
 purpose: it is enables chaining of the mathematical operation
 ```
