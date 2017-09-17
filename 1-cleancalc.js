@@ -6,19 +6,19 @@ var calc = {
 	lastResult: 0000,
 	
 	operate: function(operation, arg1, arg2) {
-	if (arg2) {
+	if(arg2){
 		calc.lastResult = operation(arg1, arg2);
-		return calc.lastResult;
-	} else {
-		calc.lastResult = operation(arg1, calc.lastResult);
-		return calc.lastResult;
+		return this.lastResult;
+	}else{
+		calc.lastResult = operation(arg1, this.lastResult);
+		return this.lastResult;
 	}
 },
 	add: function(arg1, arg2) {
 	return arg1 + arg2;
 },
 	subtract:function(arg1, arg2) {
-	return arg1 + arg2;
+	return arg1 - arg2;
 },
 	multiply:function(arg1, arg2) {
 	return arg1 * arg2;
