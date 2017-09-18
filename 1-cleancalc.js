@@ -6,13 +6,46 @@ var calc = {
 	lastResult: 0000,
 	
 	operate: function(operation, arg1, arg2) {
-	if(arg2){
-		calc.lastResult = operation(arg1, arg2);
+		switch(operation){
+         case "add":
+          if(arg2){
+		calc.lastResult = calc.add(arg1, arg2);
 		return this.lastResult;
 	}else{
-		calc.lastResult = operation(arg1, this.lastResult);
+		calc.lastResult = calc.add(arg1, this.lastResult);
 		return this.lastResult;
 	}
+	break;
+        case "subtract":
+         if(arg2){
+		calc.lastResult = calc.subtract(arg1, arg2);
+		return this.lastResult;
+	}else{
+		calc.lastResult = calc.subtract(arg1, this.lastResult);
+		return this.lastResult;
+	}
+	break;
+        case "multiply":
+         if(arg2){
+		calc.lastResult = calc.multiply(arg1, arg2);
+		return this.lastResult;
+	}else{
+		calc.lastResult = calc.multiply(arg1, this.lastResult);
+		return this.lastResult;
+	}
+	break; 
+        case "divide":
+         if(arg2){
+		calc.lastResult = calc.divide(arg1, arg2);
+		return this.lastResult;
+	}else{
+		calc.lastResult = calc.divide(arg1, this.lastResult);
+		return this.lastResult;
+	}
+	break;
+
+		}
+	
 },
 	add: function(arg1, arg2) {
 	return arg1 + arg2;
@@ -45,7 +78,7 @@ var testingOperate=function(testee){
 	var a=5;
     var b=0;
     var expected=0;
-  if(testee(calc.divide,a,b)===expected){return true;}
+  if(testee(ToOperate,a,b)===expected){return true;}
    else{return false;}
 
 }

@@ -4,18 +4,18 @@ $(document).ready(function(){
 	//#firstArg
 	//#secondArg
 	$("#divide").click(function(){
-		mathOperator=calc.divide;
+		mathOperator="divide";
 
 	});
 	$("#multiply").click(function(){
-		mathOperator=calc.multiply;
+		mathOperator="multiply";
 
 	}); 
 	$("#subtract").click(function(){
-		mathOperator=calc.subtract;
+		mathOperator="subtract";
 	}); 
 	$("#plus").click(function(){
-		mathOperator=calc.add;
+		mathOperator="add";
 
 	});
 	$("#calculate").click(function(){
